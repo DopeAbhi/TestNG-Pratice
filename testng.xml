@@ -9,7 +9,12 @@
                             <include name="test1"/>
                         </methods>
                     </class>
-                    <class name="TestNG.Before_Execution"></class>
+                    <class name="TestNG.Annotations">
+
+                    </class>
+                    <class name="TestNG.Annotations2">
+
+                    </class>
 
                 </classes>
 

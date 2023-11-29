@@ -1,12 +1,15 @@
 package TestNG;
 
-import org.junit.Before;
 import org.testng.annotations.*;
 
-public class Before_Execution {
+public class Annotations {
 @BeforeTest
 public void BeforeTest(){
     System.out.println("Before Test Execution");
+}
+@BeforeClass
+public void BeforeClass(){
+    System.out.println("Before Class Execution");
 }
     @BeforeMethod
     public void BeforeMethod()
@@ -23,16 +26,25 @@ public void BeforeTest(){
     {
         System.out.println("Test2");
     }
-
-    @AfterTest
-    public void AfterTest(){
-        System.out.println("After Test Execution");
-    }
+    @Test(enabled = false)
+    public void Test3() {System.out.println("Test3");} //Disable the test
     @AfterMethod
     public void AfterMethod()
     {
         System.out.println("After Test Method");
     }
+
+    @AfterClass()
+public void AfterClass()
+    {
+        System.out.println("After Class Execution");
+    }
+
+    @AfterTest
+    public void AfterTest(){
+        System.out.println("After Test Execution");
+    }
+
 
 
 
