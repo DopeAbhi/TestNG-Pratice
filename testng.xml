@@ -6,11 +6,12 @@
                 <classes>
                     <class name="TestNG.Methods">
                         <methods>
-                            <include name="test"/>
+                            <include name="test1"/>
                         </methods>
                     </class>
-                    
+                    <class name="TestNG.Before_Execution"></class>
+
                 </classes>
 
-    </test>
+</test>
 </suite>
