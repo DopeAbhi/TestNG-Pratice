@@ -1,22 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/Users/abhayverma/IdeaProjects/TestNG-Pratice">
+    <test  name="TestNG-Pratice">
 
-                <classes>
-                    <class name="TestNG.Methods">
-                        <methods>
-                            <include name="test1"/>
-                        </methods>
-                    </class>
-                    <class name="TestNG.Annotations">
 
-                    </class>
-                    <class name="TestNG.Annotations2">
 
-                    </class>
 
-                </classes>
+
+
+
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <exclude name="sanity"></exclude>-->
+<!--&lt;!&ndash;                <include name="regression"/>&ndash;&gt;-->
+<!--            </run>-->
+<!--        </groups>-->
+
+
+
+
+
+        <parameter name="param1" value="Tester 1"></parameter>
+        <parameter name="param2" value="Tester 2"></parameter>
+     <classes>
+
+    <class name="TestNG.parameters"></class>
+     </classes>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--                <classes>-->
+<!--                    <class name="TestNG.Methods">-->
+<!--                        <methods>-->
+<!--                            <include name="test1"/>-->
+<!--                        </methods>-->
+<!--                    </class>-->
+<!--                    <class name="TestNG.Annotations">-->
+
+<!--                    </class>-->
+<!--                    <class name="TestNG.Annotations2">-->
+
+<!--                    </class>-->
+
+<!--                </classes>-->
 
 </test>
 </suite>
