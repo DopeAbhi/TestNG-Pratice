@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+<!--    To run Parllel Test Suite-->
+<!--<suite name="All Test Suite" parallel="tests" thread-count="2">-->
+    <listeners>
+        <listener class-name="TestNG.CustomListners"></listener>
+    </listeners>
     <test  name="TestNG-Pratice">
 
+<!--        Listners Example-->
+<classes>
+    <class name="TestNG.ListenersExample"></class>
+</classes>
 
 
 
 
 
 
+
+
+
+
+<!--        Parllel Methods Execution-->
+<!--<classes>-->
+<!--    <class name="TestNG.ParllelExecutionExample"></class>-->
+<!--&lt;!&ndash;    <class name="TestNG.Methods"></class>&ndash;&gt;-->
+<!--</classes>-->
+
+
+
+
+
+<!--Example of Grouping-->
 <!--        <groups>-->
 <!--            <run>-->
 <!--                <exclude name="sanity"></exclude>-->
@@ -18,17 +42,14 @@
 
 
 
+<!--Parameters Example-->
 
+<!--        <parameter name="param1" value="Tester 1"></parameter>-->
+<!--        <parameter name="param2" value="Tester 2"></parameter>-->
+<!--     <classes>-->
 
-        <parameter name="param1" value="Tester 1"></parameter>
-        <parameter name="param2" value="Tester 2"></parameter>
-     <classes>
-
-    <class name="TestNG.parameters"></class>
-     </classes>
-
-
-
+<!--    <class name="TestNG.parameters"></class>-->
+<!--     </classes>-->
 
 
 
@@ -43,6 +64,9 @@
 
 
 
+
+
+<!--        Example of before and after methods,class,test and suite-->
 
 <!--                <classes>-->
 <!--                    <class name="TestNG.Methods">-->
@@ -59,5 +83,13 @@
 
 <!--                </classes>-->
 
-</test>
+    </test>
+
+<!--        Parllel Test Suite Example-->
+
+<!--    <test name="test2">-->
+<!--        <classes>-->
+<!--            <class name="TestNG.Methods"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
